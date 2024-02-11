@@ -39,11 +39,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Center(
             child: Text(
           widget.title,
-          style: TextStyle(fontSize: 35),
+          style: const TextStyle(fontSize: 35),
         )),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
         ),
         child: Center(
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 55,
                 decoration: BoxDecoration(
                     color: Colors.purple, border: Border.all(width: 3)),
-                child: Center(
+                child: const Center(
                     child: Text(
                   'DIGITAL NOTICE BOARD',
                   style: TextStyle(
@@ -66,13 +66,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   // height: 390,
                   color: Colors.white,
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Center(
                     child: Row(children: [
                       Expanded(
                         flex: 6,
                         child: Container(
-                          margin: EdgeInsets.only(right: 10),
+                          margin: const EdgeInsets.only(right: 10),
                           decoration: BoxDecoration(
                               color: Colors.grey, border: Border.all(width: 3)),
                         ),
@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Expanded(
                                 flex: 5,
                                 child: Container(
-                                  margin: EdgeInsets.only(bottom: 10),
+                                  margin: const EdgeInsets.only(bottom: 10),
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       border: Border.all(width: 3)),

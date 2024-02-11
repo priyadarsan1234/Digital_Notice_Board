@@ -75,7 +75,7 @@ class _ImageListState extends State<ImageList> {
   }
 
   void startTimer() {
-  timer = Timer.periodic(Duration(seconds: 5), (Timer t) {
+  timer = Timer.periodic(const Duration(seconds: 5), (Timer t) {
     if (imageStrings.isNotEmpty) {
       setState(() {
         String firstItem = imageStrings.removeAt(0);
@@ -143,7 +143,7 @@ class _ImageListState extends State<ImageList> {
               ),
               alignment: Alignment.center,
               child: upcomingData.isEmpty
-                  ? Text(
+                  ? const Text(
                       'Creative Techno College First Professional Degree College In Angul',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -157,7 +157,7 @@ class _ImageListState extends State<ImageList> {
                         width: MediaQuery.of(context).size.width,
                         child: Marquee(
                           text: upcomingData.join(", "),
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                             color: Colors.white,
@@ -166,11 +166,11 @@ class _ImageListState extends State<ImageList> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           blankSpace: 20.0,
                           velocity: 50.0,
-                          pauseAfterRound: Duration(seconds: 1),
+                          pauseAfterRound: const Duration(seconds: 1),
                           startPadding: 10.0,
-                          accelerationDuration: Duration(seconds: 1),
+                          accelerationDuration: const Duration(seconds: 1),
                           accelerationCurve: Curves.linear,
-                          decelerationDuration: Duration(milliseconds: 500),
+                          decelerationDuration: const Duration(milliseconds: 500),
                           decelerationCurve: Curves.easeOut,
                         ),
                       ),
